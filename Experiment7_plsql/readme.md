@@ -33,11 +33,27 @@ END;
 - Declare two numeric variables and initialize them.
 - Use an `IF` statement to compare the values.
 - Display the greater number using `DBMS_OUTPUT.PUT_LINE`.
-
+### Program:
+```
+DECLARE
+    num1 NUMBER := 50;
+    num2 NUMBER := 80;
+BEGIN
+    IF num1 > num2 THEN
+        DBMS_OUTPUT.PUT_LINE('Greater number is: ' || num1);
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('Greater number is: ' || num2);
+    END IF;
+END;
+/
+```
 **Expected Output:**  
 Greater number is: 80
 
 ---
+### Output:
+<img width="846" height="421" alt="image" src="https://github.com/user-attachments/assets/8ca09078-ce2b-454c-ae90-14a368204dd6" />
+
 
 ## 2. Write a PL/SQL program to Calculate Sum of First N Natural Numbers
 
